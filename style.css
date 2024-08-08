@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: nofex;
+    src: url(nofex/Nofex.otf);
+}
+
+@font-face {
+    font-family: sakana;
+    src: url(sakana/Sakana.ttf);
+}
+
+html, body{
+    scrollbar-width: none;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.background{
+    aspect-ratio: 3/2;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(120%) brightness(100%);
+    
+}
+
+.item{
+    aspect-ratio: 3/4;
+    transition: 0.3s ease-in-out,transform 0.3s ease;
+} 
+
+.item:nth-child(3){
+    margin-left: -130px;
+    z-index: 5;
+}
+.item:nth-child(1){
+    margin-right:-145px;
+    z-index: 5;
+}
+
+
+.item-containter{
+    display: flex;
+    position:absolute;
+    transform: translate(39vh,39vh);
+    z-index: 5;
+    width:fit-content;
+    
+}
+
+.navbar{
+    position: absolute;
+    display: flex;
+    gap : 700px;
+    align-items: center;
+    z-index:7;
+    color:white;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.navbar > div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    
+}
+.navbar > h1 {
+    font-family: sakana;
+    font-size: 38px;
+}
+
+.navbar > div > ul{
+    display: flex;
+    gap:40px;
+    align-items: center;
+}
+
+.navbar > div > ul > li{
+list-style: none;
+font-size: 24px;
+margin-right: 50px;
+font-family: nofex;
+}
+
+.navbar > div > button {
+    width : auto;
+    height: 50px;
+    padding:10px;
+    border-radius: 15px;
+    background-color: red;
+    border: none;
+    color:white;
+    font-family: nofex;
+}
+
+.item:hover{
+    z-index:7;
+    scale:1.3;
+}
+
+.item:not(.item:hover){
+    filter: grayscale(1);
+    }
+
+.firstitem{
+    width:25vw;
+    height:7vh;
+    position:absolute;
+    z-index:4;
+    border:6px solid white;
+    transform: translate(68vw,53vh);
+    padding : 23px;
+    animation-name: text1;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    display: none;
+   
+    border-start-end-radius: 25px;
+    border-end-start-radius: 25px;
+  
+}
+
+.firstitem > h3 {
+    font-size: 25px;
+    font-weight: 300;
+    font-family:nofex ;
+    color: white;
+
+}
+
+.seconditem{
+    width:25vw;
+    height:7vh;
+    position:absolute;
+    z-index:4;
+    border:6px solid white;
+    transform: translate(36vw,17vh);
+    padding : 23px;
+    animation-name: text2;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    display: none;
+    border-start-end-radius: 25px;
+    border-end-start-radius: 25px;
+
+}
+
+.seconditem>h3{
+    font-family:nofex ;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.thirditem{
+    width:25vw;
+    height:7vh;
+    position:absolute;
+    z-index:4;
+    border:6px solid white;
+    transform: translate(5vw,36vh);
+    padding : 23px;
+    display: none;
+    animation-name: text3;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    
+    border-start-end-radius: 25px;
+    border-end-start-radius: 25px;
+}
+
+.thirditem > h3{
+    font-size: 25px;
+    font-weight: 300;
+    font-family:nofex ;
+    color: white;
+}
+
+@keyframes Animation {
+    from{
+        border-color: aliceblue;
+    }
+
+
+    to{
+        border-color:red;
+    }
+
+}
+
+
+@keyframes text1{
+    from{
+        
+        transform: translate(68vw,80vh);
+    }
+    to{
+        
+        transform: translate(68vw,53vh);
+    }
+}
+
+@keyframes text2{
+    from{
+        
+        transform: translate(4vw,17vh);
+    }
+    to{
+        
+        transform: translate(36vw,17vh);
+    }
+}
+
+@keyframes text3{
+    from{
+        transform: translate(5vw,12vh);
+    }
+    to{
+      
+        transform: translate(5vw,36vh);
+    }
+}
