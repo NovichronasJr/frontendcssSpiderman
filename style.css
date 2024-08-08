@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: nofex;
-    src: url(Nofex.otf);
+    src: url(nofex/Nofex.otf);
 }
 
 @font-face {
     font-family: sakana;
-    src: url(Sakana.ttf);
+    src: url(sakana/Sakana.ttf);
 }
 
 html, body{
@@ -48,7 +48,7 @@ html, body{
 .item-containter{
     display: flex;
     position:absolute;
-    transform: translate(39vh,39vh);
+    transform: translate(39vh,49vh);
     z-index: 5;
     width:fit-content;
     
