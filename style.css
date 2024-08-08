@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: nofex;
-    src: url(nofex/Nofex.otf);
+    src: url(Nofex.otf);
 }
 
 @font-face {
     font-family: sakana;
-    src: url(sakana/Sakana.ttf);
+    src: url(Sakana.ttf);
 }
 
 html, body{
